@@ -20,7 +20,7 @@ const App = () => {
 
   return (
     <div>
-      <div>App2</div>
+      <div>App22</div>
     </div>
   )
 }
