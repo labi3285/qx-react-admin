@@ -1,5 +1,8 @@
-import React from 'react'
+import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
+import asyncComponent from './lazy'
+
+const Page1 = asyncComponent(() => import('./routes/page1'));
 
 // import Page1 from './routes/page1'
 
@@ -20,7 +23,7 @@ const App = () => {
 
   return (
     <div>
-      <div>App2</div>
+      <Page1 />
     </div>
   )
 }
