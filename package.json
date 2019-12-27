@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack --config ./config/webpack.config.dev.js",
     "release": "webpack --config ./config/webpack.config.release.js",
-    "server": "webpack-dev-server --config ./config/webpack.config.common.js"
+    "server": "webpack-dev-server --config ./config/webpack.config.common.js --open 'google chrome'"
   },
   "author": "labi3285",
   "license": "ISC",

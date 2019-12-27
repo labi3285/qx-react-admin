@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path')
+const opn = require('opn');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 const CleanWebpackPlugin = require('clean-webpack-plugin')
