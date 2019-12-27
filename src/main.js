@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import HelloReactStroyboard from './hello-react'
 
 // import Page1 from './routes/page1'
 
@@ -20,7 +21,7 @@ const App = () => {
 
   return (
     <div>
-      <div>App22</div>
+      <HelloReactStroyboard />
     </div>
   )
 }
