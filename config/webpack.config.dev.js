@@ -13,7 +13,7 @@ module.exports = merge(common, {
   devtool: 'cheap-module-eval-source',
   optimization: {
     splitChunks: {
-      chunks: 'all',
+      chunks: 'async',
     }
   },
   plugins: [

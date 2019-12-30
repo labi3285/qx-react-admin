@@ -1,15 +1,12 @@
 import React from 'react'
 
-class Clock extends React.Component {
+class HelloClock extends React.Component {
   constructor(props) {
     super(props);
     this.state = {date: new Date()};
   }
   componentDidMount() {
-    this.timer = setInterval(
-      () => this.tick(),
-      1000
-    );
+    this.timer = setInterval(() => this.tick(), 1000);
   }
   componentWillUnmount() {
     clearInterval(this.timer);
@@ -21,8 +18,8 @@ class Clock extends React.Component {
   }
   render() {
     return (
-        <h2>{this.state.date.toLocaleTimeString()}</h2>
+      <h2>{this.state.date.toLocaleTimeString()}</h2>
     )
   }
 }
-export default Clock
+export default HelloClock

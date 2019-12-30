@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path')
 const opn = require('opn');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 const CleanWebpackPlugin = require('clean-webpack-plugin')
@@ -30,7 +31,7 @@ module.exports =  {
       minChunks: 1,
       maxAsyncRequests: 5,
       maxInitialRequests: 3,
-      automaticNameDelimiter: '~',
+      automaticNameDelimiter: '.',
       name: true,
       cacheGroups: {
         vendors: {
