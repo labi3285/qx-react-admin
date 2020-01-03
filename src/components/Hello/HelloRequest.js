@@ -34,7 +34,7 @@ class HelloRequest extends React.Component {
   render() {
     return (
       <div>
-        请求Git记录：
+        用户最新的Gist共享地址：
         <ul>
           {
             this.state.gists.map((item, i) =>
